@@ -78,19 +78,49 @@ if (age >= 18) {
     console.log(name + " es mayor de edad.");
 } else {
     console.log(name + " es menor de edad.");
-}
+};
 
-
-document.getElementById("btnMostrarDia").onclick = function() {
+    document.getElementById("btnMostrarDia").onclick = function() {
     let diaInput = document.querySelector("input").value;
     let dia = parseInt(diaInput);
-switch (dia){
-case 1: console.log("Lunes"); break;
-case 2: console.log("Martes"); break;
-case 3: console.log("Miércoles"); break;
-case 4: console.log("Jueves"); break;
-case 5: console.log("Viernes"); break;
-case 6: console.log("Sábado"); break;
-case 7: console.log("Domingo"); break;
-default: console.log("No es un día válido"); break;
+        switch (dia){
+        case 1: alert("Lunes"); break;
+        case 2: alert("Martes"); break;
+        case 3: alert("Miércoles"); break;
+        case 4: alert("Jueves"); break;
+        case 5: alert("Viernes"); break;
+        case 6: alert("Sábado"); break;
+        case 7: alert("Domingo"); break;
+        default: alert("No es un día válido"); break;
 }};
+
+
+
+// Bucles
+console.log("Bucle for")
+for (let i = 1; i <= 10; i++){
+    console.log(i)
+};
+console.log("Bucle while")
+let i2 = 0;
+while (i2 < 5){
+    console.log(i2);
+    i2++;
+};
+
+
+
+
+
+//Crea un programa que calcule el factorial de un número usando while.
+
+//Para sacar el factorial de un número, multiplica ese número por todos los enteros positivos menores que él hasta llegar a 1. El factorial de un número n se representa como n!. Por ejemplo, 4! = 4 × 3 × 2 × 1 = 24. 
+console.log("Sacar factorial")
+let numeroF = 4;
+let factorial = 1;
+let contadorF = 1;
+while (contadorF < numeroF){
+    factorial *= contadorF;
+    contadorF++;
+};
+console.log(factorial)
